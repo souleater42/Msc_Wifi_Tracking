@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-07-11" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.10" locale="en_GB">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="167" order="0"/>
+        <field id="tpd4" name="Begin date" width="65" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Msc Project" meeting="false" start="2019-07-01" duration="65" complete="0" expand="true"/>
+        <task id="1" name="Project outline" color="#8cb6ce" meeting="false" start="2019-07-01" duration="8" complete="0" thirdDate="2019-07-01" thirdDate-constraint="0" priority="2" expand="true"/>
+        <task id="7" name="Ethical Clearance" meeting="false" start="2019-07-02" duration="14" complete="0" expand="true"/>
+        <task id="9" name="Foot Fall Counter" meeting="false" start="2019-07-02" duration="5" complete="0" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" name="Draft Literacture Review" meeting="false" start="2019-07-04" duration="12" complete="0" expand="true">
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="Background, Aims and Objectives" meeting="false" start="2019-07-04" duration="12" complete="0" expand="true"/>
+        <task id="13" name="Database Creation" meeting="false" start="2019-07-09" duration="8" complete="0" expand="true">
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="Analysis" meeting="false" start="2019-07-15" duration="10" complete="0" expand="true"/>
+        <task id="17" name="Literacture Review" color="#8cb6ce" meeting="false" start="2019-07-22" duration="5" complete="0" thirdDate="2019-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="21" name="Identify People with Multiple Devices" meeting="false" start="2019-07-19" duration="11" complete="0" expand="true"/>
+        <task id="22" name="Create Network" meeting="false" start="2019-07-22" duration="10" complete="0" expand="true">
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="30" name="Record Inside Tracking Range Time" meeting="false" start="2019-07-22" duration="6" complete="0" expand="true"/>
+        <task id="24" name="Test Basic Design" color="#8cb6ce" meeting="false" start="2019-08-05" duration="6" complete="0" thirdDate="2019-07-01" thirdDate-constraint="0" expand="true">
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" name="Test Analysis" meeting="false" start="2019-08-13" duration="3" complete="0" expand="true"/>
+        <task id="25" name="Testing Complete" meeting="false" start="2019-08-26" duration="10" complete="0" expand="true"/>
+        <task id="27" name="Critical Evaluation" meeting="false" start="2019-09-02" duration="10" complete="0" expand="true"/>
+        <task id="28" name="Final Hand In" meeting="false" start="2019-09-02" duration="20" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
