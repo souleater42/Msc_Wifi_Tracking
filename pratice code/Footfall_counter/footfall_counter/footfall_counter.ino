@@ -24,6 +24,8 @@
 #include <WiFiUdp.h>
 #include <stdio.h>
 #include <string.h>
+#include <SPI.h>
+#include <SD.h>
 
 #define MaxChannel 11
 #define ChannelTime  1 // time in millieseconds 
@@ -40,15 +42,19 @@ float previousTransmissionMillis = 0; // last time data was sent
 const char *ssid     = "BTHub6-Q3QS";
 const char *password = "UxGrfcU96dgP";
 
+String filteredMacAddress[1] = {"NullFilter"};
+
 // Define NTP Client to get time
 const long utcOffsetInSeconds = 3600;
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "pool.ntp.org", utcOffsetInSeconds);
 
 #include "generalFun.h"
+#include "SdCard.h"
 #include "GetCurrentDT.h"
 #include "wifiAndPromiscuousMode.h"
 #include "sendRecordedData.h"
+
 
 void setup()
 {
@@ -63,6 +69,11 @@ void setup()
   // turn on wifi
   connectToWifi();
 
+  // start up sd card connection
+  setupSD();
+  String filtLoc = "filteredMacAddresses.csv";
+  getFilters(filtLoc);
+
   // if conneceted to wifi get start time
   timeClient.begin();
 
@@ -75,6 +86,7 @@ void setup()
 
   // turn on promiscuous mode
   enablePromiscuousMode();
+
 
 }
 

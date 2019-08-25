@@ -65,6 +65,17 @@ String hashMacAddress(String mac) {
   return md5.toString();
 }
 
+
+bool filterCheck(String mac) {
+  for (int c = 0; c < sizeof(filteredMacAddress); c++) {
+    String filter = (String)filteredMacAddress[c];
+    if (filter.equals(mac)) {
+      return true;
+    }
+  }
+  return false;
+}
+
 /**
    @summary - records variables for the database and stores it.
    @description - will hash the macaddress and store the wanted
@@ -75,14 +86,21 @@ String hashMacAddress(String mac) {
    @return - None
 */
 void recordData(int32_t rssi, String userMac) {
-  // apply one-way hash to mac addres to anonymise
-  String hashedMac = hashMacAddress(userMac);
-  // get timestamp of amount of seconds since start up, millis resets every 49 days
-  float timeStamp = getRunTime(); // divide millis by 1000 to get seconds
-  // format data to be added to file/database
-  String record = hashedMac + "," + trackerMacAddress + "," + startDateTime + "," +
-                  (String)timeStamp + "," + (String)rssi + ";";
-  Serial.println(record);
+  //if (filterCheck(userMac)) {
+    // apply one-way hash to mac addres to anonymise
+    String hashedMac = hashMacAddress(userMac);
+    // get timestamp of amount of seconds since start up, millis resets every 49 days
+    float runTime = getRunTime(); // divide millis by 1000 to get seconds
+    // format data to be added to file/database
+    String record = hashedMac + "," + trackerMacAddress + "," + startDateTime + "," +
+                    (String)runTime + "," + (String)rssi + ";";
+    String fileNM = "tracker_recording_4.txt";
+    uint32_t freeHeap = system_get_free_heap_size();
+    //Serial.println(freeHeap);
+    //Serial.println(ESP.getMaxFreeBlockSize());
+    writeSD(fileNM, record);
+    //Serial.println(record);
+//  }
 }
 
 /**
@@ -122,6 +140,9 @@ void wifi_tracker_packet_handler(uint8_t *buff, uint16_t len) {
     userMac = macAddress2;
   } else if (macAddress2.equals(nullMac)) {
     userMac = macAddress1;
+  } else {
+    recordData((int32_t)ppkt->rx_ctrl.rssi, macAddress1);
+    userMac = macAddress2;
   }
   // record mac address and rssi
   recordData((int32_t)ppkt->rx_ctrl.rssi, userMac);
