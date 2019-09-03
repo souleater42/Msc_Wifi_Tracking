@@ -1,0 +1,42 @@
+CREATE TABLE `wificounter`.`devices` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `macAddress` VARCHAR(40) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `macAddress_UNIQUE` (`macAddress` ASC) VISIBLE);
+:
+CREATE TABLE `wificounter`.`counters` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `macAddress` VARCHAR(20) NOT NULL,
+  `filterId` INT NOT NULL DEFAULT -100,
+  PRIMARY KEY (`id`));
+:
+CREATE TABLE `wificounter`.`recordings` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `recordingDateTime` DATETIME NOT NULL,
+  `rssi` INT NOT NULL,
+  `counterId` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `counterIdFk_idx` (`counterId` ASC) VISIBLE,
+  CONSTRAINT `counterIdFk`
+    FOREIGN KEY (`counterId`)
+    REFERENCES `wificounter`.`counters` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+:
+CREATE TABLE `wificounter`.`devicerecords` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `deviceId` INT NOT NULL,
+  `recordId` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `deviceIdFk_idx` (`deviceId` ASC) VISIBLE,
+  INDEX `recordIdFk_idx` (`recordId` ASC) VISIBLE,
+  CONSTRAINT `deviceIdFk`
+    FOREIGN KEY (`deviceId`)
+    REFERENCES `wificounter`.`devices` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `recordIdFk`
+    FOREIGN KEY (`recordId`)
+    REFERENCES `wificounter`.`recordings` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
