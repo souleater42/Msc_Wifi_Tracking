@@ -1,0 +1,146 @@
+database made
+connected to database
+-------------------------------
+test 1:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 10000
+the rssi limit is : -100
+time (sec): 1046
+-------------------------------
+test 2:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 10000
+the rssi limit is : -100
+time (sec): 1214
+-------------------------------
+test 3:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 10000
+the rssi limit is : -100
+time (sec): 1320
+-------------------------------
+test 1:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 100000
+the rssi limit is : -100
+time (sec): 948
+-------------------------------
+test 2:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 100000
+the rssi limit is : -100
+time (sec): 933
+-------------------------------
+test 3:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 100000
+the rssi limit is : -100
+time (sec): 837
+-------------------------------
+test 1:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 250000
+the rssi limit is : -100
+time (sec): 822
+-------------------------------
+test 2:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 250000
+the rssi limit is : -100
+time (sec): 782
+-------------------------------
+test 3:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 250000
+the rssi limit is : -100
+time (sec): 776
+-------------------------------
+test 1:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 500000
+the rssi limit is : -100
+time (sec): 793
+-------------------------------
+test 2:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 500000
+the rssi limit is : -100
+time (sec): 801
+-------------------------------
+test 3:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 500000
+the rssi limit is : -100
+time (sec): 752
+-------------------------------
+test 1:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 750000
+the rssi limit is : -100
+time (sec): 727
+-------------------------------
+test 2:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 750000
+the rssi limit is : -100
+time (sec): 733
+-------------------------------
+test 3:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 750000
+the rssi limit is : -100
+time (sec): 727
+-------------------------------
+test 1:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 1000000
+the rssi limit is : -100
+time (sec): 752
+-------------------------------
+test 2:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 1000000
+the rssi limit is : -100
+time (sec): 761
+-------------------------------
+test 3:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 1000000
+the rssi limit is : -100
+time (sec): 747
+-------------------------------
+test 1:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 2000000
+the rssi limit is : -100
+time (sec): 1183
+-------------------------------
+test 2:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 2000000
+the rssi limit is : -100
+time (sec): 1174
+-------------------------------
+test 3:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 2000000
+the rssi limit is : -100
+time (sec): 1176
+-------------------------------
+test 1:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 4000000
+the rssi limit is : -100
+time (sec): 1851
+-------------------------------
+test 2:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 4000000
+the rssi limit is : -100
+time (sec): 1845
+-------------------------------
+test 3:
+test file : C:\Users\Mhowa\OneDrive\Documents\CSM9060_MSC_Dissertation\pratice code\DataProcessor\records\recordings_5.txt
+bytes limit: 4000000
+the rssi limit is : -100
+time (sec): 1852
